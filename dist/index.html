@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="base min-h-screen w-full bg-gray-800 flex justify-center items-center font-poppins">
+  <div class="mid-card bg-green-400 rounded-md 
+              w-[90%] sm:w-[30rem] md:w-[36rem] lg:w-[40rem] xl:w-[44rem] 
+              h-auto py-6">
+              
+    <div class="input flex items-center justify-between gap-3 px-4 sm:px-6">
+      <form action="#" class="w-full">
+        <input 
+          type="text" 
+          class="w-full p-3 sm:p-4 rounded-lg border text-base sm:text-lg" 
+          spellcheck="false" 
+          placeholder="Enter City Name" id="search">
+      </form>
+      <span class="bg-white p-3 sm:p-4 rounded-full flex items-center justify-center">
+        <img src="/Images/search.png" class="h-5 cursor-pointer sm:h-6" alt="" id="search-btn">
+      </span>
+    </div>
+    <div class="main">
+        <div class="img flex justify-center items-center mt-5">
+            <img src="/Images/drizzle.png" id="image" class="h-[15rem]" alt="">
+        </div>
+        <div class="text text-center mt-3">
+            <h2 class="text-[3rem] font-poppins font-medium text-white" id="temp">7°C</h2>
+        </div>
+        <div class="city text-center mt-2"> 
+            <h2 class="text-[2.5rem] font-poppins font-medium text-white" id="cityname">New York</h2>
+        </div>
+    </div>
+    <div class="columns px-4 py-10 sm:px-10 md:px-20 lg:p-20 flex flex-col sm:flex-row items-center justify-between gap-10  sm:gap-32">
+  <!-- Humidity -->
+  <div class="humidity flex items-center gap-5">
+    <img src="/Images/humidity.png" class="h-14" alt="">
+    <span class="flex flex-col">
+      <h2 class="font-poppins font-medium text-white text-xl sm:text-[1.7rem]" id="humidity">48%</h2>
+      <h2 class="font-poppins font-medium text-white text-xl sm:text-[1.7rem]">Humidity</h2>
+    </span>
+  </div>
+
+  <!-- Wind Speed -->
+  <div class="windspeed flex items-center gap-5">
+    <img src="/Images/wind.png" class="h-14" alt="">
+    <span class="flex gap-5">
+      <h2 class="font-poppins font-medium text-white text-xl sm:text-[1.7rem]" id="speed">10.29 Km/h</h2>
+    </span>
+  </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
