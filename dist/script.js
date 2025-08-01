@@ -18,7 +18,7 @@ async function checkweather(city) {
     const weatherMain = data.weather[0].main;
     const image = document.querySelector('#image');
 
-    if (weatherMain === "Clouds") {
+    if (weatherMain === "Clouds"){
       image.src = "/Images/clouds.png";
     } else if (weatherMain === "Clear") {
       image.src = "/Images/clear.png";
